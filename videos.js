@@ -3,12 +3,14 @@
  *
  * Lägg till, ta bort eller ändra videor här.
  * Varje video behöver:
- *   id          – YouTube-videons ID (delen efter ?v= i URL:en)
+ *   id          – Videons ID (YouTube: delen efter ?v= / Vimeo: siffrorna i URL:en)
  *   title       – Rubrik som visas under videon
  *   description – Kort beskrivning
  *   category    – En av: "bollkontroll", "snabbhet-styrka", "malvakt"
+ *   platform    – "youtube" (standard) eller "vimeo" (valfritt, utelämna för YouTube)
  *
- * Exempel: https://www.youtube.com/watch?v=abc123  →  id: "abc123"
+ * Exempel YouTube: https://www.youtube.com/watch?v=abc123     →  id: "abc123"
+ * Exempel Vimeo:   https://vimeo.com/123456789               →  id: "123456789", platform: "vimeo"
  */
 
 const VIDEOS = [
@@ -96,6 +98,12 @@ const VIDEOS = [
  * ─── Rendering-funktion (används av kategorisidorna) ─────────
  * Anropas automatiskt – du behöver inte ändra denna.
  */
+function escapeHTML(str) {
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
+
 function renderVideos(category) {
   const container = document.getElementById("video-container");
   if (!container) return;
@@ -107,21 +115,28 @@ function renderVideos(category) {
     return;
   }
 
-  container.innerHTML = filtered.map(v => `
+  container.innerHTML = filtered.map(v => {
+    const safeTitle = escapeHTML(v.title);
+    const safeDesc = escapeHTML(v.description);
+    const embedUrl = v.platform === "vimeo"
+      ? `https://player.vimeo.com/video/${encodeURIComponent(v.id)}`
+      : `https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}`;
+    return `
     <div class="video-card">
       <div class="embed-wrapper">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}"
-          title="${v.title}"
+          src="${embedUrl}"
+          title="${safeTitle}"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
           loading="lazy"
         ></iframe>
       </div>
       <div class="info">
-        <h3>${v.title}</h3>
-        <p>${v.description}</p>
+        <h3>${safeTitle}</h3>
+        <p>${safeDesc}</p>
       </div>
     </div>
-  `).join("");
+  `;
+  }).join("");
 }

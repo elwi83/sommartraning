@@ -25,7 +25,15 @@ body {
   background: var(--gray-bg);
   color: #222;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+main, .hero, .categories, .page-title, .video-grid {
+  /* allow content sections to grow */
+}
+
 
 /* ---- HEADER / NAV ---- */
 header {
@@ -246,6 +254,7 @@ footer {
   text-align: center;
   padding: 1.5rem;
   font-size: 0.85rem;
+  margin-top: auto;
 }
 
 footer a {
