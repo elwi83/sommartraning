@@ -23,9 +23,9 @@ const VIDEOS = [
     category: "bollkontroll"
   },
   {
-    id: "dQw4w9WgXcQ",
-    title: "Dragningar och finter",
-    description: "Övningar för att förbättra dina dragningar och lura motståndaren.",
+    id: "9irhdDKZCkg",
+    title: "Teknikövningar röd nivå",
+    description: "Övningar för att förbättra din bollkontroll.",
     category: "bollkontroll"
   },
   {
