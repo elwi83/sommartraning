@@ -44,14 +44,14 @@ const VIDEOS = [
   // ─── SNABBHET & STYRKA ─────────────────────────────────────
   {
     id: "k5n6p-MRwF0",
-    title: "5 Speed & Agility Drills",
-    description: "5 övningar för öka snabbhet. Antingen lägger ni något band att hoppa över eller så tänker ni att något ligger där.",
+    title: "5 Speed & Agility Drills (English)",
+    description: "5 övningar för öka snabbhet. Antingen lägger ni något band att hoppa över eller så tänker ni att något ligger där. På Engelska.",
     category: "snabbhet-styrka"
   },
   {
-    id: "dQw4w9WgXcQ",
-    title: "Spänst och explosivitet",
-    description: "Övningar för att bli snabbare i starter och riktningsbyten.",
+    id: "4IuLRXOPl8c",
+    title: "Explosiveness & Power Exercises (English)",
+    description: "Övningar för att bli snabbare i starter och riktningsbyten.På engelska",
     category: "snabbhet-styrka"
   },
   {
