@@ -43,9 +43,9 @@ const VIDEOS = [
 
   // ─── SNABBHET & STYRKA ─────────────────────────────────────
   {
-    id: "dQw4w9WgXcQ",
-    title: "Snabbhetsstege – fotarbete",
-    description: "Förbättra din snabbhet och koordination med stegeövningar.",
+    id: "k5n6p-MRwF0",
+    title: "5 Speed & Agility Drills",
+    description: "5 övningar för öka snabbhet. Antingen lägger ni något band att hoppa över eller så tänker ni att något ligger där.",
     category: "snabbhet-styrka"
   },
   {
