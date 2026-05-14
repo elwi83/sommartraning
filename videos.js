@@ -69,15 +69,9 @@ const VIDEOS = [
 
   // ─── MÅLVAKT ───────────────────────────────────────────────
   {
-    id: "dQw4w9WgXcQ",
-    title: "Grundställning och positionering",
-    description: "Lär dig rätt grundställning och hur du positionerar dig i målet.",
-    category: "malvakt"
-  },
-  {
-    id: "dQw4w9WgXcQ",
-    title: "Benarbete och förflyttningar",
-    description: "Träna snabba förflyttningar mellan stolparna.",
+    id: "O10CXuOkW0g",
+    title: "Grundställning och förflyttningar",
+    description: "Lär dig rätt grundställning och hur du positionerar dig i målet sam olika förflyttningar.",
     category: "malvakt"
   },
   {
