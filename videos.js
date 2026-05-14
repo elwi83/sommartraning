@@ -17,9 +17,9 @@ const VIDEOS = [
 
   // ─── BOLLKONTROLL ──────────────────────────────────────────
   {
-    id: "dQw4w9WgXcQ",
-    title: "Grundläggande bollkontroll",
-    description: "Lär dig de viktigaste teknikerna för att kontrollera bollen med klubban.",
+    id: "Qo6T064iIsfLVguG",
+    title: "Teknikövningar blå nivå",
+    description: "Teknikövningar för spelare på blå nivå. A-lagsspelarna Linnea Juhlin, Frida Swahn, Sebastian Sääker och Tom Colling visar några övningar som alla ungdomar kan köra hemma.",
     category: "bollkontroll"
   },
   {
@@ -35,9 +35,9 @@ const VIDEOS = [
     category: "bollkontroll"
   },
   {
-    id: "dQw4w9WgXcQ",
-    title: "Mottagning och passning",
-    description: "Så tar du emot och spelar vidare bollen snabbt och säkert.",
+    id: "0pOdD75Mc0k",
+    title: "5 Skill Moves to Impress Your Friends",
+    description: "OBS, svåra och mer utmanande men våga försök. Inga förväntningar att ni ska kunna detta.",
     category: "bollkontroll"
   },
 
