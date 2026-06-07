@@ -193,6 +193,129 @@ nav a.active {
   margin-top: 0.3rem;
 }
 
+/* ---- FYS PLAN ---- */
+.fys-plan {
+  max-width: 900px;
+  margin: 2rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.fys-plan-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fys-header {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  border-top: 4px solid var(--navy);
+}
+
+.fys-header h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+
+.fys-note {
+  font-size: 0.9rem;
+  color: var(--gray-text);
+  font-style: italic;
+}
+
+.fys-block {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+.fys-block-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white);
+  padding: 0.75rem 1.25rem;
+}
+
+.block-warm .fys-block-title  { background: #e07b00; }
+.block-speed .fys-block-title  { background: var(--navy); }
+.block-strength .fys-block-title { background: #1e7a3e; }
+.block-cardio .fys-block-title { background: #c0392b; }
+.block-bonus .fys-block-title  { background: #7b3fb5; }
+
+.fys-sub-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--navy);
+  padding: 0.6rem 1.25rem 0.1rem;
+}
+
+.fys-list {
+  list-style: none;
+  padding: 0.3rem 1.25rem 0.75rem;
+  margin: 0;
+}
+
+.fys-list li {
+  padding: 0.3rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.fys-list li:last-child { border-bottom: none; }
+
+.fys-list-indent li::before {
+  content: "→ ";
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.fys-tip {
+  color: var(--gray-text);
+  font-size: 0.88rem;
+}
+
+.fys-rest {
+  color: #999;
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+.fys-table {
+  width: calc(100% - 2.5rem);
+  margin: 0.5rem 1.25rem 1rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.fys-table td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.fys-table tr:last-child td { border-bottom: none; }
+
+.fys-table td:first-child {
+  font-weight: 600;
+  color: var(--navy);
+  width: 55%;
+}
+
+.fys-table td:last-child {
+  color: var(--gray-text);
+}
+
+.fys-bonus-text {
+  padding: 0.75rem 1.25rem 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
 /* ---- VIDEO GRID ---- */
 .video-grid {
   max-width: 1100px;
