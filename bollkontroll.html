@@ -32,12 +32,23 @@
 
   <section class="video-grid" id="video-container"></section>
 
+  <section class="challenge-section">
+    <div class="challenge-header">
+      <h2>🔥 Utmaningar</h2>
+      <p class="challenge-note">OBS – svåra och mer utmanande men våga försök. Inga förväntningar att ni ska kunna detta.</p>
+    </div>
+    <div class="video-grid" id="video-container-utmaning"></div>
+  </section>
+
   <footer>
     <p>Sommarträning – Segeltorp P15</p>
   </footer>
 
   <script src="videos.js"></script>
-  <script>renderVideos("bollkontroll");</script>
+  <script>
+    renderVideos("bollkontroll", "video-container");
+    renderVideos("bollkontroll", "video-container-utmaning", "utmaning");
+  </script>
 
 </body>
 </html>

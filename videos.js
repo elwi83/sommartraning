@@ -20,43 +20,53 @@ const VIDEOS = [
     id: "Qo6T064iIsfLVguG",
     title: "Teknikövningar blå nivå",
     description: "Teknikövningar för spelare på blå nivå. A-lagsspelarna Linnea Juhlin, Frida Swahn, Sebastian Sääker och Tom Colling visar några övningar som alla ungdomar kan köra hemma.",
-    category: "bollkontroll"
+    category: "bollkontroll",
+    platform: "vimeo"
   },
   {
     id: "9irhdDKZCkg",
-    title: "Teknikövningar röd nivå",
+    title: "Teknikövningar röd nivå",
     description: "Övningar för att förbättra din bollkontroll.",
     category: "bollkontroll"
   },
+
+  // ─── BOLLKONTROLL – UTMANINGAR ─────────────────────────────
   {
     id: "0pOdD75Mc0k",
     title: "5 Skill Moves to Impress Your Friends",
-    description: "OBS, svåra och mer utmanande men våga försök. Inga förväntningar att ni ska kunna detta.",
-    category: "bollkontroll"
+    description: "Olika svårare bollkontrolls övningar. På engelska.",
+    category: "bollkontroll",
+    subcategory: "utmaning"
+  },
+  {
+    id: "UPtyRyLBawo",
+    title: "Avancerade teknikövningar",
+    description: "Utmanande bollkontrollsövningar för den som vill testa gränserna.",
+    category: "bollkontroll",
+    subcategory: "utmaning"
   },
 
   // ─── SNABBHET & STYRKA ─────────────────────────────────────
   {
     id: "k5n6p-MRwF0",
     title: "5 Speed & Agility Drills (English)",
-    description: "5 övningar för öka snabbhet. Antingen lägger ni något band att hoppa över eller så tänker ni att något ligger där. På Engelska.",
+    description: "5 övningar för att öka snabbhet. Antingen lägger ni något band att hoppa över eller så tänker ni att något ligger där. På engelska.",
     category: "snabbhet-styrka"
   },
   {
     id: "4IuLRXOPl8c",
     title: "Explosiveness & Power Exercises (English)",
-    description: "Övningar för att bli snabbare i starter och riktningsbyten.På engelska",
+    description: "Övningar för att bli snabbare i starter och riktningsbyten. På engelska.",
     category: "snabbhet-styrka"
   },
-
 
   // ─── MÅLVAKT ───────────────────────────────────────────────
   {
     id: "O10CXuOkW0g",
     title: "Grundställning och förflyttningar",
-    description: "Lär dig rätt grundställning och hur du positionerar dig i målet sam olika förflyttningar.",
+    description: "Lär dig rätt grundställning och hur du positionerar dig i målet samt olika förflyttningar.",
     category: "malvakt"
-  },
+  }
 ];
 
 /*
@@ -69,11 +79,16 @@ function escapeHTML(str) {
   return div.innerHTML;
 }
 
-function renderVideos(category) {
-  const container = document.getElementById("video-container");
+function renderVideos(category, containerId, subcategory) {
+  const id = containerId || "video-container";
+  const container = document.getElementById(id);
   if (!container) return;
 
-  const filtered = VIDEOS.filter(v => v.category === category);
+  const filtered = VIDEOS.filter(v => {
+    if (v.category !== category) return false;
+    if (subcategory === "utmaning") return v.subcategory === "utmaning";
+    return !v.subcategory; // default: only non-challenge videos
+  });
 
   if (filtered.length === 0) {
     container.innerHTML = '<p style="text-align:center;padding:2rem;color:#888;">Inga videor tillagda ännu. Lägg till i <code>videos.js</code>.</p>';
