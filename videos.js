@@ -66,6 +66,12 @@ const VIDEOS = [
     title: "Grundställning och förflyttningar",
     description: "Lär dig rätt grundställning och hur du positionerar dig i målet samt olika förflyttningar.",
     category: "malvakt"
+  },
+  {
+    id: "mCuQeu79MCo",
+    title: "Öga-hand koordination",
+    description: "Öva bollkontroll för målvakter och utespelare.",
+    category: "malvakt"
   }
 ];
 
