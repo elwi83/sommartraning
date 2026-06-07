@@ -45,20 +45,6 @@ const VIDEOS = [
     subcategory: "utmaning"
   },
 
-  // ─── SNABBHET & STYRKA ─────────────────────────────────────
-  {
-    id: "k5n6p-MRwF0",
-    title: "5 Speed & Agility Drills (English)",
-    description: "5 övningar för att öka snabbhet. Antingen lägger ni något band att hoppa över eller så tänker ni att något ligger där. På engelska.",
-    category: "snabbhet-styrka"
-  },
-  {
-    id: "4IuLRXOPl8c",
-    title: "Explosiveness & Power Exercises (English)",
-    description: "Övningar för att bli snabbare i starter och riktningsbyten. På engelska.",
-    category: "snabbhet-styrka"
-  },
-
   // ─── MÅLVAKT ───────────────────────────────────────────────
   {
     id: "O10CXuOkW0g",
