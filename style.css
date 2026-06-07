@@ -370,6 +370,30 @@ nav a.active {
   color: var(--gray-text);
 }
 
+/* ---- MALVAKT EXERCISES ---- */
+.malvakt-exercises {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.malvakt-exercises-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.malvakt-link {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+}
+
+.malvakt-link:hover {
+  color: var(--accent);
+}
+
 /* ---- CHALLENGE SECTION (bollkontroll) ---- */
 .challenge-section {
   max-width: 1100px;
