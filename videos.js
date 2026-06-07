@@ -29,12 +29,6 @@ const VIDEOS = [
     category: "bollkontroll"
   },
   {
-    id: "dQw4w9WgXcQ",
-    title: "Bollkontroll i fart",
-    description: "Träna på att behålla kontrollen när du springer med bollen.",
-    category: "bollkontroll"
-  },
-  {
     id: "0pOdD75Mc0k",
     title: "5 Skill Moves to Impress Your Friends",
     description: "OBS, svåra och mer utmanande men våga försök. Inga förväntningar att ni ska kunna detta.",
@@ -54,18 +48,7 @@ const VIDEOS = [
     description: "Övningar för att bli snabbare i starter och riktningsbyten.På engelska",
     category: "snabbhet-styrka"
   },
-  {
-    id: "dQw4w9WgXcQ",
-    title: "Styrketräning utan redskap",
-    description: "Kroppsövningar som bygger styrka – perfekt att göra hemma.",
-    category: "snabbhet-styrka"
-  },
-  {
-    id: "dQw4w9WgXcQ",
-    title: "Uthållighet och kondition",
-    description: "Intervallträning anpassad för innebandyspelare.",
-    category: "snabbhet-styrka"
-  },
+
 
   // ─── MÅLVAKT ───────────────────────────────────────────────
   {
@@ -74,18 +57,6 @@ const VIDEOS = [
     description: "Lär dig rätt grundställning och hur du positionerar dig i målet sam olika förflyttningar.",
     category: "malvakt"
   },
-  {
-    id: "dQw4w9WgXcQ",
-    title: "Räddningar – låga skott",
-    description: "Teknik för att rädda skott längs marken och i benhöjd.",
-    category: "malvakt"
-  },
-  {
-    id: "dQw4w9WgXcQ",
-    title: "Räddningar – höga skott",
-    description: "Så räddar du skott i överkropp- och huvudhöjd.",
-    category: "malvakt"
-  }
 ];
 
 /*
