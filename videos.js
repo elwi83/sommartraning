@@ -17,11 +17,10 @@ const VIDEOS = [
 
   // ─── BOLLKONTROLL ──────────────────────────────────────────
   {
-    id: "Qo6T064iIsfLVguG",
+    id: "syNjZiNd5ss",
     title: "Teknikövningar blå nivå",
     description: "Teknikövningar för spelare på blå nivå. A-lagsspelarna Linnea Juhlin, Frida Swahn, Sebastian Sääker och Tom Colling visar några övningar som alla ungdomar kan köra hemma.",
-    category: "bollkontroll",
-    platform: "vimeo"
+    category: "bollkontroll"
   },
   {
     id: "9irhdDKZCkg",
